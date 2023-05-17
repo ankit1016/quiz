@@ -107,7 +107,7 @@ margin: auto;
     flex-shrink: 1;
     flex-grow: 1;
     align-self: stretch;
-    min-width: 9rem;
+    min-width: 8rem;
     min-height: 9rem;
     background-color: rgb(255, 255, 255);
     border-radius: 16px;
