@@ -1,0 +1,75 @@
+.main_div{
+    background-color: var(--color);
+    background-image: url("../../asset/bg_img.png");
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    opacity: 1;
+    border: 0px;
+    height: 100vh;
+   text-align: center;
+   overflow: hidden;
+}
+.timer{
+    color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.timer>img{
+    width: 2rem;
+}
+
+
+.count{
+    color: var(--button-bg);
+    margin-top: 3rem;
+}
+.question{
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    max-width: 80vw;
+    margin: auto;
+}
+.options{
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+}
+.options>div{
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: white;
+    color: var(--color);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next{
+    color: white;
+    font-size: 0.8rem;
+  display: inline-block;
+  right: 0;
+    position: absolute;
+    bottom: 2%;
+    margin: 1rem;
+    cursor: pointer;
+    
+    
+}
+
+.correct{
+    background-color: var(--success-bg-color) !important;
+    color: var(--success-color) !important;
+}
+
+.wrong{
+    background-color: var(--error-bg-color) !important;
+    color: var(--error-color) !important;
+}

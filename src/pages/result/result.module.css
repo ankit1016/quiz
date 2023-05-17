@@ -1,0 +1,95 @@
+.main_div{
+    background-color: var(--color);
+    background-image: url("../../asset/bg_img.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    opacity: 1;
+ 
+    border: 0px;
+    height: 100vh;
+   text-align: center;
+   overflow: hidden;
+
+}
+
+.cancle{
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: white;
+    text-align: right;
+}
+
+
+.message{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+.message>p{
+    margin: 0;
+}
+.title{
+    color: var( --button-bg);
+}
+
+.score_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score{
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+}
+.reward{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.reward>span{
+    margin-left: -.5rem;
+}
+.reward>img{
+    height: 3rem;
+    width: 3rem;
+}
+.win_img{
+    margin-top: 3rem;
+}
+.win_img>img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.button{
+    bottom:10%; 
+    width: 100%;
+    height: 3.5rem;   
+    position: absolute;
+}
+
+.button>button{
+
+    outline: none;
+    cursor: inherit;
+    width: 10rem;
+    height: 2rem;
+    color: var(--color);
+    background-color: rgb(65, 229, 237);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
+    padding: 0px 10px;
+    border-radius: 1rem;
+    border: 0px;
+}
+
+

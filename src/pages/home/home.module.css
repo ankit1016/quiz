@@ -1,0 +1,123 @@
+.home_div{
+padding:0 1rem;
+max-width: 768px;
+margin: auto;
+}
+
+.center{
+    text-align: center;
+    font-weight: 600;
+}
+
+.img{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    opacity: 1;
+    border: 0px;
+}
+
+.center>p{
+  color: var(--color);
+  font-size: 1rem;
+  margin:0.5rem  0;
+}
+
+.center>h2{
+    color: var(--color);
+    margin: 0;
+    font-size: 2rem;
+}
+
+.quiz_title{
+    color: var(--color);
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.daily_quiz_div{
+    height: 20vh;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.header_div{
+    margin-top: 0.4rem;
+}
+
+.header_name{
+    overflow: hidden;
+    white-space: pre-wrap;
+    margin:0.5rem 0 0 0px;
+    color:var(--color);
+    font-weight:800;
+    font-size: 1.25rem;
+    letter-spacing: 0px;
+}
+
+.count{
+    font-weight: 300;
+    color: var(--color);
+    font-size: 0.8rem;
+    margin: 0;
+}
+.play_button{
+    outline: none;
+    cursor: inherit;
+    width: 8rem;
+    height: 1.6rem;
+    color: var(--button-color);
+    background-color: var(--button-bg);
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: none;
+    padding: 0px 10px;
+    border-radius: 8px;
+    border: none;
+     position: absolute;
+     bottom: 20%;
+}
+
+
+.cat_title{
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories_div{
+    margin: 1rem 0.5rem;
+    padding-bottom:0.5rem ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    min-width: 9rem;
+    min-height: 9rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    opacity: 1;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.categories_div>p{
+    margin: 0;
+    color: var(--color);
+    font-weight: 800;
+    font-size: 0.8rem;
+}

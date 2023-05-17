@@ -1,0 +1,105 @@
+
+.img_div{
+    background-color: var(--color);
+    margin: 0.5rem;
+    border-radius: 1rem;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+.arrow{
+    font-size: 1.2rem;
+   
+}
+
+.description{
+    color: var(--color);
+    margin-left: 0.5rem;
+    max-width: 320px;
+    margin: auto;
+}
+.name{
+    font-size: 1rem;
+    color: var(--color);
+    margin: auto;
+    text-transform: capitalize;
+}
+.arrow>i{
+    color: var(--color);
+}
+
+
+.title{
+    font-size: 1.4rem;
+    margin: 0;
+    color: var(--color);
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+.back_div{
+    display: flex;
+    justify-content: space-between;
+    margin:0.5rem 1rem;
+}
+.rule_icon_div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rule_icon_div>div{
+    margin: 1rem 0.5rem;
+    padding-bottom:0.5rem ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    min-width: 2rem;
+    min-height: 6rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    opacity: 1;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.button_div{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
+}
+
+.play_button{
+    outline: none;
+    cursor: inherit;
+    width: 8rem;
+    height: 2rem;
+    color: var(--color);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: none;
+    padding: 0px 10px;
+    border-radius: 8px;
+    margin: 1rem;
+    border: 1px solid var(--color);
+   cursor: pointer;
+}
+
+.rule_icon_div>div>p{
+    margin: 0;
+    color: var(--color);
+    font-weight: 600;
+    font-size: 0.8rem;
+
+}
