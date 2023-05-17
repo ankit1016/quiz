@@ -10,6 +10,7 @@ const QuizRule = () => {
  const[loader,setLoader]=useState(false)
   const {state}=useLocation()
 
+
   const navigate = useNavigate();
     const Axios=useAxios()
     useEffect(() => {

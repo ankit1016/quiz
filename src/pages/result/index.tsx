@@ -1,19 +1,25 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styles from "./result.module.css"
-import {Link, useLocation} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom"
 const Result = () => {
   const {state}=useLocation()
-  const {answerCount}=state
+  const navigate=useNavigate()
 
+
+  useEffect(() => {
+    if(!state){
+      navigate("/")   
+    }
+  }, [])
   return (
-    <div className={styles.main_div}>
+    state?<div className={styles.main_div}>
      <Link to="/"> <div className={styles.cancle}><i className="fa fa-times" aria-hidden="true"/></div></Link>
       <div className={styles.message}><p>Congrats!</p></div>
       <div className={styles.title}><p>Your Score</p></div>
       <div className={styles.score_card}>
-        <div className={styles.score}>{answerCount}/10</div>
+        <div className={styles.score}>{state.answerCount}/10</div>
         <div className={styles.reward}>
-          <img src={require("../../asset/reward.png")} alt="reward_image" width={"100vw"}/><span>+{answerCount*10} points</span>
+          <img src={require("../../asset/reward.png")} alt="reward_image" width={"100vw"}/><span>+{state.answerCount*10} points</span>
         </div>
       </div>
       <div className={styles.win_img}>
@@ -23,7 +29,7 @@ const Result = () => {
         <button type='button'>Play Again</button>
       </div>
       </Link>
-    </div>
+    </div>:<>invalid</>
   )
 }
 

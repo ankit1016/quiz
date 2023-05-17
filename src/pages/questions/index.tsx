@@ -4,7 +4,7 @@ import { useLocation, useNavigate} from "react-router-dom"
 
 const Questions = () => {
    const {state}=useLocation();
-   const {data}=state
+   const data=state?state.data:[]
    const [count,setCount]=useState(0)
    const [time,setTime]=useState(60)
    const [options,setOptions]=useState<any[]>([])
@@ -18,12 +18,20 @@ const Questions = () => {
     if(time)setTimeout(()=>{setTime((pre)=>pre-1)},1000)
     else navigate("/result",{state:{answerCount:correctCount}})
   },[time])
+   
+  useEffect(() => {
+    if(!state){
+      navigate("/")   
+    }
+  }, [])
 
     useEffect(()=>{
+      if(state){
       const options=shuffle([data[count].correct_answer, ...data[count].incorrect_answers]);
       setOptions(options)
       setIsCorrect("")
       setOptionIndex(-1)
+      }
     },[count])
    
 
@@ -56,10 +64,10 @@ const Questions = () => {
   }
 
   const parser=new DOMParser()
-  const decodedQuestion = simpleString(data[count].question)
+  const decodedQuestion = state?simpleString(data[count].question):""
    
   return (
-    <div className={styles.main_div}>
+   state? <div className={styles.main_div}>
     <div className={styles.timer}><img src={require("../../asset/timer.png")} />{time}</div>
      <div className={styles.count}><p> Question {count+1} out of 10 </p></div>
     <div className={styles.question}> <p> {decodedQuestion}  </p></div>
@@ -70,7 +78,7 @@ const Questions = () => {
     </div>
    <div className={styles.next} onClick={handleNext}>Continue</div>
   
-      </div>
+      </div>:<>invalid</>
     
   )
 }
